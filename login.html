@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/login.css">
+
+    <!-- responsividade -->
+     <link rel="stylesheet" href="style/responsive.css">
+
+    <!-- owl css -->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <title>Newflix</title>
+</head>
+<body>
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">Login</h3>
+                <p class="descricao">
+                    Faça seu login para entrar na sua conta.
+                </p>
+                <h3>Email
+                    <input >
+                </h3>
+                <h3>Senha
+                    <input >
+                </h3>
+                <button role='button' class="botao" onclick="window.location.href='/index.html'">
+                    Cancelar
+                </button>
+                <button role='button' class="botao" onclick="{mostrarPerfil()}">
+                    Confirmar
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/c02edc009f.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="js/owl/owl.carousel.min.js" crossorigin="anonymous"></script>
+    <script src="js/owl/setup.js" crossorigin="anonymous"></script>
+    <script>
+        function mostrarPerfil() {
+            window.location.href='/index.html'
+            
+        }
+    </script>
+</body>
+</html>
