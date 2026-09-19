@@ -13,6 +13,8 @@ body {
     background: var(--preta);
     font-family: 'Arial', Times, serif;
     color: white;
+    width: 600px;
+    margin: 0 auto;
 }
 
 .titulo{
@@ -26,13 +28,23 @@ body {
     border: none;
     color: white;
     padding: 15px 30px;
-    margin-right: 15px;
-    font-size: 12px;
+    font-size: 16px;
     cursor: pointer;
     transition: .3s ease all;
+    margin-top: 30px;
 }
 
 .botao:hover{
     background-color: white;
     color: black;
+}
+
+.descricao{
+    margin-top: 15px;
+    text-align: center
+}
+
+.container{
+    display: grid;
+    place-items: center;
 }

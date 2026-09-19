@@ -19,6 +19,7 @@ body {
     margin-top: 15%;
     font-size: 40px;
     font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin-bottom: 30px;
 }
 
 .botao{
@@ -26,8 +27,7 @@ body {
     border: none;
     color: white;
     padding: 15px 30px;
-    margin-right: 15px;
-    font-size: 12px;
+    font-size: 16px;
     cursor: pointer;
     transition: .3s ease all;
 }
@@ -35,4 +35,25 @@ body {
 .botao:hover{
     background-color: white;
     color: black;
+}
+
+.descricao{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.dados{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.container{
+    display: grid;
+    place-items: center;
+}
+
+.espacamento-botoes{
+    justify-content: space-between;
 }
