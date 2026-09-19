@@ -1,0 +1,59 @@
+:root{
+    --preta: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* elementos base */
+body {
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin-bottom: 30px;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.descricao{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.dados{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.container{
+    display: grid;
+    place-items: center;
+}
+
+.espacamento-botoes{
+    justify-content: space-between;
+}

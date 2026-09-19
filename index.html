@@ -24,25 +24,31 @@
                 <a href="#filmes">Filmes</a>
                 <a href="#documentarios">Documentários</a>
             </nav>
-            <button class="login" role='button'>
+            <button id="btn-login" class="login" role='button' onclick="window.location.href='/login.html'">
                 Login
             </button>
+            <div id="container-usuario" class="sair-e-email" style="display: none;">
+                <div id="email-usuario" class="email-usuario"></div>
+                <button onclick="sair()" class="botao-sair">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </button>
+            </div>
         </div>
     </header>
     <main>
         <div class="filme-principal">
             <div class="container">
-                <h3 class="titulo">HOUSE OF CARDS</h3>
+                <h3 class="titulo">Lanterns (2026)</h3>
                 <p class="descricao">
-                    Betrayed by the White House, Congressman Frank Underwood embarks
-                    on a ruthless rise to power. Blackmail, seduction and ambition
-                    are his weapons.
+                    Two intergalactic cops, new recruit John Stewart and Lantern legend Hal Jordan,
+                    are drawn into a dark, Earth-based mystery as they investigate a murder in the
+                    American heartland.
                 </p>
-                <button role='button' class="botao">
+                <button role='button' class="botao" onclick="window.location.href='/erro.html'">
                     <i class="fas fa-play"></i>
                     ASSISTIR AGORA
                 </button>
-                <button role='button' class="botao">
+                <button role='button' class="botao" onclick="window.location.href='/info.html'">
                     <i class="fas fa-info-circle"></i>
                     MAIS INFORMAÇÕES
                 </button>
@@ -450,5 +456,21 @@
     <script src="js/owl/jquery.min.js" crossorigin="anonymous"></script>
     <script src="js/owl/owl.carousel.min.js" crossorigin="anonymous"></script>
     <script src="js/owl/setup.js" crossorigin="anonymous"></script>
+    <script>
+        const parametros = new URLSearchParams(window.location.search);
+        const emailLogado = parametros.get('email');
+    
+        if (emailLogado) {
+            const botao = document.getElementById('btn-login');
+            const textoEmail = document.getElementById('email-usuario');
+            textoEmail.textContent = emailLogado;
+            if (botao) botao.style.display = 'none';
+            document.getElementById('container-usuario').style.display = 'flex';
+        }
+
+        function sair() {
+            window.location.href = '/index.html';
+        }
+    </script>
 </body>
 </html>
